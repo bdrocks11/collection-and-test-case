@@ -1,0 +1,18 @@
+{
+	"info": {
+		"_postman_id": "f23728ac-5661-48c6-a12c-f1185080319f",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "openweather(City)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
