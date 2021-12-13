@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "f23728ac-5661-48c6-a12c-f1185080319f",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "openweather(City)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "izaan-token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic MXU1aW80dmE5c3I0NW43OWZjZWcyZGFtamY6MXFia3RodnA3bGJjN2FhdnVoaG1mZzhmMmNyZWtvcjloMmg3YWJ1Mm9ydTFubHBqNzFmZQ==",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "scope",
+							"value": "izaan_test/post_info",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://izaan-test.auth.us-east-1.amazoncognito.com/oauth2/token",
+					"protocol": "https",
+					"host": [
+						"izaan-test",
+						"auth",
+						"us-east-1",
+						"amazoncognito",
+						"com"
+					],
+					"path": [
+						"oauth2",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "izaan test/people",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJraWQiOiJtNlhhM3FkczlxY2o2ODZYOVBRb0JqTEJSQU5yMzBPZ21ZQzdvdThZc1N3PSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIxdTVpbzR2YTlzcjQ1bjc5ZmNlZzJkYW1qZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaXphYW5fdGVzdFwvcG9zdF9pbmZvIiwiYXV0aF90aW1lIjoxNjM5NDI5MDE1LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9ZN3k4cTVDMVoiLCJleHAiOjE2Mzk0MzI2MTUsImlhdCI6MTYzOTQyOTAxNSwidmVyc2lvbiI6MiwianRpIjoiMmE1OGY2MzItNjlmMS00NzI4LWFjZjAtNGE1YTIzOWRmMmQyIiwiY2xpZW50X2lkIjoiMXU1aW80dmE5c3I0NW43OWZjZWcyZGFtamYifQ.XU9QC4my3MsC_Lh5zjgAbVeplxwTqyNOEpnPt_VavztQfZXFH4bi7gaf52DGCa02z1lE8gaqgm2_Tikqc3uA6jvzt2H0RNSfDTo1xaINguY44VhvFq-zb8E_IWo3e6POcFum4EApVCLxCApRNPJqOU8e_1Kghvu82QgL7q8jnEw5XA1IQU-F8hJuPDYkSIYjQmdNLswXliYMjUPSHS7bwt8sC861u-0w7fsrKhpqTd-uydIExG7d2AuB6yIzNA6VhiVRLXg3pRHfPiS_OSGicz-gZmehT_EJGYOqTCy6mXQmsuloSzSjV87S6m2B8nQcQx7GRn8ZlLQv0p3zEenMZw",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://5x9m5ed0tj.execute-api.us-east-1.amazonaws.com/test/people",
+					"protocol": "https",
+					"host": [
+						"5x9m5ed0tj",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"test",
+						"people"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "izaan-quiz id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "id",
+						"value": "Quiz-010425",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://y219glknu3.execute-api.us-east-1.amazonaws.com/testPutQuiz/get",
+					"protocol": "https",
+					"host": [
+						"y219glknu3",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testPutQuiz",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "openweather(london)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?q=London&appid=7e9f898de324ff9e08f50a804b299850",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "London"
+						},
+						{
+							"key": "appid",
+							"value": "7e9f898de324ff9e08f50a804b299850"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "openweather(Asia/Kolkata)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/onecall?lat=27.2046&lon=77.4977&exclude=minutely&appid=7e9f898de324ff9e08f50a804b299850",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"onecall"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "27.2046"
+						},
+						{
+							"key": "lon",
+							"value": "77.4977"
+						},
+						{
+							"key": "exclude",
+							"value": "minutely"
+						},
+						{
+							"key": "appid",
+							"value": "7e9f898de324ff9e08f50a804b299850"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "openweather(Buffalo)(Lat/Lon)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/onecall?lat=42.8864&lon=-78.8784&exclude=minutely&appid=7e9f898de324ff9e08f50a804b299850",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"onecall"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "42.8864"
+						},
+						{
+							"key": "lon",
+							"value": "-78.8784"
+						},
+						{
+							"key": "exclude",
+							"value": "minutely"
+						},
+						{
+							"key": "appid",
+							"value": "7e9f898de324ff9e08f50a804b299850"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
